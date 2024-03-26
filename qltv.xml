@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="qltv.dtd" type="application/xml-dtd"?> -->
+<?xml-model href="qltv.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<QuanLyThuVien>
+    <Sach MaSach="s01" TenSach="Đắc Nhân Tâm" TacGia="Bùi Xuân Hiếu" NXB="Nhi Đồng" TheLoai="Tâm Lý" SoLuong="5">
+        <TheDocGia MaDocGia="dg01" TenDocGia="Bùi Xuân Huấn" NgaySinh="1996-01-01" GioiTinh="Nam" DiaChi="Hà Nội" SDT="0123456789" NgayLapThe="1996-01-01" NgayHetHan="1996-01-01">
+            <PhieuMuon MaPhieuMuon="pm01" NgayMuon="1996-01-01" NgayTra="1996-01-01" SoLuong="3"></PhieuMuon>
+        </TheDocGia>
+    </Sach>
+    <Sach MaSach="s02" TenSach="Siêu Nhân Biến Hình" TacGia="Gao Bạc" NXB="Gao" TheLoai="Siêu Nhân" SoLuong="4">
+        <TheDocGia MaDocGia="dg02" TenDocGia="Phúc Lỏ" NgaySinh="1996-01-01" GioiTinh="Nữ" DiaChi="Phú Mậu" SDT="0123654987" NgayLapThe="1996-01-01" NgayHetHan="1996-01-01">
+            <PhieuMuon MaPhieuMuon="pm02" NgayMuon="1996-01-01" NgayTra="1996-01-01" SoLuong="2"></PhieuMuon>
+            <PhieuMuon MaPhieuMuon="pm03" NgayMuon="1996-01-01" NgayTra="1996-01-01" SoLuong="3"></PhieuMuon>
+        </TheDocGia>
+    </Sach>
+    <Sach MaSach="s03" TenSach="Siêu Nhân Gao" TacGia="Gao Đỏ" NXB="Gao" TheLoai="Siêu Nhân" SoLuong="2">
+        <TheDocGia MaDocGia="dg03" TenDocGia="Minh Hùng" NgaySinh="1996-01-01" GioiTinh="Nam" DiaChi="Huế" SDT="0932242424" NgayLapThe="1996-01-01" NgayHetHan="1996-01-01">
+            <PhieuMuon MaPhieuMuon="pm04" NgayMuon="1996-01-01" NgayTra="1996-01-01" SoLuong="1"></PhieuMuon>
+        </TheDocGia>
+    </Sach>
+</QuanLyThuVien>

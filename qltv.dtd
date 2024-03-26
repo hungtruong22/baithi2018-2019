@@ -1,0 +1,25 @@
+<!ELEMENT QuanLyThuVien (Sach+)>
+<!ELEMENT Sach (TheDocGia*)>
+    <!ATTLIST Sach
+        MaSach CDATA #REQUIRED
+        TenSach CDATA #REQUIRED
+        TacGia CDATA #REQUIRED
+        NXB CDATA #REQUIRED
+        TheLoai CDATA #REQUIRED
+        SoLuong CDATA #REQUIRED>
+<!ELEMENT TheDocGia (PhieuMuon*)>
+    <!ATTLIST TheDocGia 
+                MaDocGia CDATA #REQUIRED
+                TenDocGia CDATA #REQUIRED
+                NgaySinh CDATA #REQUIRED
+                GioiTinh CDATA #REQUIRED
+                DiaChi CDATA #REQUIRED
+                SDT CDATA #REQUIRED
+                NgayLapThe CDATA #REQUIRED
+                NgayHetHan CDATA #REQUIRED>
+<!ELEMENT PhieuMuon (#PCDATA)>
+    <!ATTLIST PhieuMuon 
+                MaPhieuMuon CDATA #REQUIRED
+                NgayMuon CDATA #REQUIRED
+                NgayTra CDATA #REQUIRED
+                SoLuong CDATA #REQUIRED>    

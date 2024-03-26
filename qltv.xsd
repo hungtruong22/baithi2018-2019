@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="QuanLyThuVien">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Sach" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TheDocGia" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PhieuMuon" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="MaPhieuMuon" type="xs:string" use="required"></xs:attribute>
+                                                <xs:attribute name="NgayMuon" type="xs:date" use="required"></xs:attribute>
+                                                <xs:attribute name="NgayTra" type="xs:date" use="required"></xs:attribute>
+                                                <xs:attribute name="SoLuong" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:int">
+                                                            <xs:minInclusive value="1"></xs:minInclusive>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="MaDocGia" type="xs:string" use="required"></xs:attribute>
+                                    <xs:attribute name="TenDocGia" type="xs:string" use="required"></xs:attribute>
+                                    <xs:attribute name="NgaySinh" type="xs:date" use="required"></xs:attribute>
+                                    <xs:attribute name="GioiTinh" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="Nam|Nữ"></xs:pattern>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="DiaChi" type="xs:string" use="required"></xs:attribute>
+                                    <xs:attribute name="SDT" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"></xs:pattern>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="NgayLapThe" type="xs:date" use="required"></xs:attribute>
+                                    <xs:attribute name="NgayHetHan" type="xs:date" use="required"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="MaSach" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="TenSach" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="TacGia" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="NXB" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="TheLoai" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="SoLuong" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:int">
+                                    <xs:minInclusive value="1"></xs:minInclusive> <!-- In >=  Ex >-->
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
